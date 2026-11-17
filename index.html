@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jokebook — FE</title>
+  </head>
+  <body>
+    <h1>Jokebook</h1>
+
+    <h2>Kategorie</h2>
+    <button type="button" id="categoriesBtn">Pobierz kategorie</button>
+    <p id="categoriesStatus"></p>
+    <ul id="categoriesList"></ul>
+
+    <h2>Losowy żart</h2>
+    <label for="categorySelect">Kategoria:</label>
+    <select id="categorySelect" disabled>
+      <option value="">— najpierw pobierz kategorie —</option>
+    </select>
+    <button type="button" id="jokeBtn" disabled>Pobierz losowy żart</button>
+    <p id="jokeStatus"></p>
+    <div id="jokeBox" hidden>
+      <p id="jokeText"></p>
+      <p id="jokeResponse"></p>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
